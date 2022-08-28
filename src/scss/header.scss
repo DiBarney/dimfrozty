@@ -1,0 +1,43 @@
+.logoHeader{
+  width: 80px;
+}
+
+header{
+  width: 95%;
+  max-width: 1280px;
+  margin: 0px auto;
+  padding: 1.2em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .columna{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    .menu{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  .leftAlign{
+    justify-content: end;
+  }
+}
+
+.enlaceComun{
+  text-decoration: none;
+  font-size: 16px;
+  color: $fuenteSecundario;
+  transition: color 0.4s ease;
+}
+
+.enlaceComun:hover{
+  color: $fuentePrimario;
+  cursor: pointer;
+}
+
+.separacion{
+  margin-left: 1em;
+}
