@@ -3,8 +3,8 @@ const Footer = () => {
 
     return(
         <footer>
-            <div class="linea"></div>
-            <div class="copyright">
+            <div className="linea"></div>
+            <div className="copyright">
                 <p>Dim Frozty <sup>TM</sup> By Barney <sup>TM</sup> {fecha.getFullYear()}</p>
             </div>
         </footer>

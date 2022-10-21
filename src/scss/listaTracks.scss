@@ -1,0 +1,47 @@
+.trackList{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 1em 0;
+    .track{
+        font-size: 0.9em;
+        padding: 0.4em 0;
+        .contTrack{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .fila{
+                padding: 0 1em;
+                &{
+                    p{
+                        text-align: right;
+                    }
+                }
+            }
+            .cover{
+                width: 5%;
+                img{
+                    width: 100%;
+                }
+            }
+            .title{
+                width: 55%;
+                h3{
+                    font-weight: normal;
+                }
+            }
+            .author{
+                width: 20%;
+                color: $fuenteOpaco;
+            }
+            .bpm{
+                width: 10%;
+                color: $fuenteOpaco;
+            }
+            .duration{
+                width: 10%;
+                color: $fuenteOpaco;
+            }
+        }
+    }
+}

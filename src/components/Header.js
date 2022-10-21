@@ -1,4 +1,4 @@
-import logo from '../img/flake_logo.png';
+import logo from '../media/flake_logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
