@@ -1,12 +1,11 @@
-function ListaTracks(props) {
-  const tracks = props.tracks;
+function ListaTracks({ tracks }) {
   return (
     <ul className="trackList">
-      {tracks.map((track)=>(
+      {tracks.map((track) => (
         <li className="track">
           <div className="contTrack">
             <div className="cover">
-              <img src={track.coverSrc} alt="DimFrozty Cover"/>
+              <img src={track.coverSrc} alt="DimFrozty Cover" />
             </div>
             <div className="fila title">
               <h3>{track.title}</h3>
@@ -15,7 +14,7 @@ function ListaTracks(props) {
               <p>{track.author}</p>
             </div>
             <div className="fila bpm">
-              <p>{track.bpm + ' BPM'}</p>
+              <p>{track.bpm + " BPM"}</p>
             </div>
             <div className="fila duration">
               <p>{track.duration}</p>
@@ -24,7 +23,7 @@ function ListaTracks(props) {
         </li>
       ))}
     </ul>
-  )
+  );
 }
 
-export default ListaTracks
+export default ListaTracks;
