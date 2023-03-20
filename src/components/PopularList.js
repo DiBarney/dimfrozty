@@ -1,20 +1,36 @@
-import ListaTracks from './ListaTracks';
-import tracks from '../data/tracks'
+import { useEffect, useState } from "react";
+import ListaTracks from "./ListaTracks";
 
 function PopularList() {
-  return (
-    <section className="popularList">
-        <div className="columna">
-            <div className="fila titulo">
-                <h2>Popular Tracks</h2>
-            </div>
+  const [tracks, setTracks] = useState(null);
+  const [tracksListos, setTracksListos] = useState(false);
 
-            <div className="fila lista">
-                <ListaTracks tracks={tracks}/>
-            </div>
+  useEffect(() => {
+    fetch("http://192.168.0.15/dimfrozty/api/test/prueba.php", {
+      method: "POST",
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        setTracks(data);
+        setTracksListos(true);
+      });
+  }, []);
+
+  if (tracksListos) {
+    return (
+      <section className="popularList">
+        <div className="columna">
+          <div className="fila titulo">
+            <h2>Popular Tracks</h2>
+          </div>
+
+          <div className="fila lista">
+            <ListaTracks tracks={tracks} />
+          </div>
         </div>
-    </section>
-  )
+      </section>
+    );
+  }
 }
 
-export default PopularList
+export default PopularList;

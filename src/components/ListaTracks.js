@@ -2,7 +2,7 @@ function ListaTracks({ tracks }) {
   return (
     <ul className="trackList">
       {tracks.map((track) => (
-        <li className="track">
+        <li className="track" key={track.id}>
           <div className="contTrack">
             <div className="cover">
               <img src={track.coverSrc} alt="DimFrozty Cover" />

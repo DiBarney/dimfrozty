@@ -30,6 +30,24 @@ code {
     monospace;
 }
 
+// Scrollbar styling
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e2e2e7e;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4949497e;
+}
+
 @import "./scss/header.scss";
 @import "./scss/mainbanner.scss";
 @import "./scss/popularList";

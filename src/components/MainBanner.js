@@ -12,8 +12,8 @@ const MainBanner = () => {
       <div className="columna colTitle">
         <div className="bannerTitle">
           <h1>
-            Cool hip-hop and trap instrumentals. Your next hit is waiting for
-            you
+            Exclusive hip-hop and trap instrumentals. Your next hit is waiting
+            for you
           </h1>
         </div>
         <div className="bannerSub">
